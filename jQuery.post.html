@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="keywords" content="jQuery,API,中文,jquery api,1.11,$.post(url,[data],[fn],[type])"/>
-    <meta name="description" content="jQuery API 1.11.3 中文手册最新版，在线地址：http://jquery.cuishifeng.cn"/>
+    <meta name="description" content="jQuery API 1.12.0 中文手册最新版，在线地址：http://jquery.cuishifeng.cn"/>
     <meta name="robots" content="all">
     <meta name="renderer" content="webkit">
     <meta name="author" content="Shifone -http://jquery.cuishifeng.cn"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>$.post(url,[data],[fn],[type]) | jQuery API 1.11 中文文档 | jQuery API 在线手册</title>
+    <title>$.post(url,[data],[fn],[type]) | jQuery API 1.12 中文文档 | jQuery API 在线手册</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="css/common.css?v=20151229">
 </head>
@@ -31,69 +31,79 @@
             </header>
             <div id="content" >
               <h2><span>返回值:XMLHttpRequest</span>jQuery.post(url, <em class="optional">[data]</em>, <em class="optional">[callback]</em>, <em class="optional">[type]</em>)</h2>
-    <h3>概述</h3>
-    <div class="desc">
-      <p>通过远程 HTTP POST 请求载入信息。</p>
-      <div class="longdesc">
+<h3>概述</h3>
+<div class="desc">
+    <p>通过远程 HTTP POST 请求载入信息。</p>
+    <div class="longdesc">
         <p>这是一个简单的 POST 请求功能以取代复杂 $.ajax 。请求成功时可调用回调函数。如果需要在出错时执行函数，请使用 $.ajax。</p>
-      </div>
+
+        <p style="color: red">jQuery 1.12 中 jQuery.post 和 jQuery.get 支持对象参数，这样一来好处还比较多，比如设置回调函数的context，或者跨域 post 时可以withCredential: true。用法可以参考示例9。</p>
     </div>
-    <h3>参数</h3>
-    <div class="parameter">
-      <h4><strong>url,[data],[callback],[type]</strong><span>String,Map,Function,String</span><em>V1.0</em></h4>
-      <p><strong>url</strong>:发送请求地址。</p>
-      <p><strong>data</strong>:待发送 Key/value 参数。</p>
-      <p><strong>callback</strong>:发送成功时回调函数。</p>
-      <p><strong>type</strong>:返回内容格式，xml, html, script, json, text, _default。</p>
-    </div>
-    <div class="example">
-      <h3>示例</h3>
-      <span id="f_ad2"></span>
-      <h4>1描述:</h4>
-      <p>请求 test.php 网页，忽略返回值：</p>
-      <h5>jQuery 代码:</h5>
-      <pre><code>$.post("test.php");</code></pre>
-      <h4>2描述:</h4>
-      <p>请求 test.php 页面，并一起发送一些额外的数据（同时仍然忽略返回值）：</p>
-      <h5>jQuery 代码:</h5>
-      <pre><code>$.post("test.php", { name: "John", time: "2pm" } );</code></pre>
-      <h4>3描述:</h4>
-      <p>向服务器传递数据数组（同时仍然忽略返回值）：</p>
-      <h5>jQuery 代码:</h5>
-      <pre><code>$.post("test.php", { 'choices[]': ["Jon", "Susan"] });</code></pre>
-      <h4>4描述:</h4>
-      <p>使用 ajax 请求发送表单数据：</p>
-      <h5>jQuery 代码:</h5>
-      <pre><code>$.post("test.php", $("#testform").serialize());</code></pre>
-      <h4>5描述:</h4>
-      <p>输出来自请求页面 test.php 的结果（HTML 或 XML，取决于所返回的内容）：</p>
-      <h5>jQuery 代码:</h5>
+</div>
+<h3>参数</h3>
+<div class="parameter">
+    <h4><strong>url,[data],[callback],[type]</strong><span>String,Map,Function,String</span><em>V1.0</em></h4>
+    <p><strong>url</strong>:发送请求地址。</p>
+    <p><strong>data</strong>:待发送 Key/value 参数。</p>
+    <p><strong>callback</strong>:发送成功时回调函数。</p>
+    <p><strong>type</strong>:返回内容格式，xml, html, script, json, text, _default。</p>
+</div>
+<div class="example">
+    <h3>示例</h3>
+    <span id="f_ad2"></span>
+    <h4>1描述:</h4>
+    <p>请求 test.php 网页，忽略返回值：</p>
+    <h5>jQuery 代码:</h5>
+    <pre><code>$.post("test.php");</code></pre>
+    <h4>2描述:</h4>
+    <p>请求 test.php 页面，并一起发送一些额外的数据（同时仍然忽略返回值）：</p>
+    <h5>jQuery 代码:</h5>
+    <pre><code>$.post("test.php", { name: "John", time: "2pm" } );</code></pre>
+    <h4>3描述:</h4>
+    <p>向服务器传递数据数组（同时仍然忽略返回值）：</p>
+    <h5>jQuery 代码:</h5>
+    <pre><code>$.post("test.php", { 'choices[]': ["Jon", "Susan"] });</code></pre>
+    <h4>4描述:</h4>
+    <p>使用 ajax 请求发送表单数据：</p>
+    <h5>jQuery 代码:</h5>
+    <pre><code>$.post("test.php", $("#testform").serialize());</code></pre>
+    <h4>5描述:</h4>
+    <p>输出来自请求页面 test.php 的结果（HTML 或 XML，取决于所返回的内容）：</p>
+    <h5>jQuery 代码:</h5>
       <pre><code>$.post("test.php", function(data){
-   alert("Data Loaded: " + data);
- });</code></pre>
-      <h4>6描述:</h4>
-      <p>向页面 test.php 发送数据，并输出结果（HTML 或 XML，取决于所返回的内容）：</p>
-      <h5>jQuery 代码:</h5>
+          alert("Data Loaded: " + data);
+          });</code></pre>
+    <h4>6描述:</h4>
+    <p>向页面 test.php 发送数据，并输出结果（HTML 或 XML，取决于所返回的内容）：</p>
+    <h5>jQuery 代码:</h5>
       <pre><code>$.post("test.php", { name: "John", time: "2pm" },
-   function(data){
-     alert("Data Loaded: " + data);
-   });</code></pre>
-      <h4>7描述:</h4>
-      <p>获得 test.php 页面的内容，并存储为 XMLHttpResponse 对象，并通过 process() 这个 JavaScript 函数进行处理：</p>
-      <h5>jQuery 代码:</h5>
+          function(data){
+          alert("Data Loaded: " + data);
+          });</code></pre>
+    <h4>7描述:</h4>
+    <p>获得 test.php 页面的内容，并存储为 XMLHttpResponse 对象，并通过 process() 这个 JavaScript 函数进行处理：</p>
+    <h5>jQuery 代码:</h5>
       <pre><code>$.post("test.php", { name: "John", time: "2pm" },
-   function(data){
-     process(data);
-   }, "xml");</code></pre>
-      <h4>8描述:</h4>
-      <p>获得 test.php 页面返回的 json 格式的内容：：</p>
-      <h5>jQuery 代码:</h5>
+          function(data){
+          process(data);
+          }, "xml");</code></pre>
+    <h4>8描述:</h4>
+    <p>获得 test.php 页面返回的 json 格式的内容：：</p>
+    <h5>jQuery 代码:</h5>
       <pre><code>$.post("test.php", { "func": "getNameAndTime" },
-   function(data){
-     alert(data.name); // John
-     console.log(data.time); //  2pm
-   }, "json");</code></pre>
-    </div>
+          function(data){
+          alert(data.name); // John
+          console.log(data.time); //  2pm
+          }, "json");</code></pre>
+    <h4>9描述:</h4>
+    <p>jQuery 1.12 中 jQuery.post支持对象参数，具体的参数可以参考 <a href="jQuery.Ajax.html">$.ajax()</a>：</p>
+    <h5>jQuery 代码:</h5>
+      <pre><code>
+          jQuery.post({
+            url: “/example”
+          });
+      </code></pre>
+</div>
             </div>
             
 
@@ -531,11 +541,11 @@
 
     </aside> <!-- left aside end -->
 
-<script src="js/jquery-2.1.4.min.js?v=20151229"></script>
-<script src="js/jquery.autocomplete.min.js?v=20151229"></script>
-<script src="js/jquery.mousewheel.min.js?v=20151229"></script>
-<script src="js/jquery.mCustomScrollbar.min.js?v=20151229"></script>
-<script src="js/shifone.min.js?v=20151229"></script>
+<script src="js/jquery-2.1.4.min.js?v=20160120"></script>
+<script src="js/jquery.autocomplete.min.js?v=20160120"></script>
+<script src="js/jquery.mousewheel.min.js?v=20160120"></script>
+<script src="js/jquery.mCustomScrollbar.min.js?v=20160120"></script>
+<script src="js/shifone.min.js?v=20160120"></script>
 
 <div class="tongji">
 <script>

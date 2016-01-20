@@ -11,7 +11,7 @@
     <meta name="author" content="Shifone -http://jquery.cuishifeng.cn"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/common.css?v=20151229">
 
     <style>
       .email-btn:hover{background:transparent;}
@@ -19,17 +19,23 @@
       .donate img{ width: 340px;}
       .donate-list{width: 100%; text-align: center;border-color: #eee;max-width: 960px; margin: 20px auto;}
       .donate-list thead{height: 30px;font-size: 16px;}
-      .donate-list td{height: 30px;}
+      .donate-list td{height: 30px;padding:3px;}
       .donate-list td.date{width: 220px;}
       .donate-list td.month{text-align:left;padding-left:50px;}
       .donate-list td.money{width:100px;}
       .donate-list td.account{text-align:left;padding-left:50px;}
+      .donate-list td.message{max-width: 200px;}
       .tips{margin: 20px 0;color: red;}
       .desc{padding: 10px 5px; font-size: 14px;line-height: 18px;color: #666;overflow-y:auto;}
       .desc .version{font-size: 13px;color: #999;}
       #desc p{text-indent: 2em; margin: 8px 0;}
       #desc .sign{text-align:right;}
       #donate-btn{display: inline-block;background: #4f81bd;color: #fff;padding: 6px 20px;font-size: 16px;border-radius: 10px;}
+	.pagger{width: 100%;margin: 10px 0 ;text-align: center;}
+        #page-list{margin: 0 auto;padding: 0;list-style: none;display: inline-block;}
+        #page-list li{ float: left;}
+        #page-list li a{display: block;padding: 7px 10px;color:#fff;background: #2B2F3E;margin: 3px;text-decoration: none;font-size: 14px;}
+       #page-list li a.current{background: #ff404b;cursor: default;}
     </style>
 </head>
 <body >
@@ -467,28 +473,33 @@
             <h3>说明</h3>
             <div id="desc" class="desc">
               
-              <p>此文档自2012年创建，三年来一直在更新，始终保持最新、最快、最全，坚信只要坚持就能做到极致，此站为个人网站，只为方便大家使用，不为盈利，所有捐赠收入将用于服务器支出！</p>
-              <p> 如果您使用中遇到任何问题或者有任何建议，请联系我：<a href="mailto:admin@cuishifeng.cn">admin@cuishifeng.cn</a></p>
+              <p>此文档自2012年创建，四年来一直在更新，始终保持最新、最快、最全，坚信只要坚持就能做到极致，此站为个人网站，只为方便大家使用，不为盈利，所有捐赠收入将用于服务器支出！</p>
+              <p> 如果您使用中遇到任何问题或者有任何建议，请联系我：&nbsp;<a href="mailto:admin@cuishifeng.cn">admin@cuishifeng.cn</a> &nbsp;&nbsp; &nbsp; <a href="http://www.cuishifeng.cn/suggest.html">在线反馈</a> </p>
+              <p style="color:#ff404b"> 友情提醒：新增备份站点：<a href="http://jq.cuishifeng.cn">http://jq.cuishifeng.cn</a> </p>
             </div>
             <h3>版权说明</h3>
             <div class="desc">
              <p>首页速查表翻译整理于: <a href="http://oscarotero.com/jquery/">http://oscarotero.com/jquery/</a>，并根据排版调整部分显示顺序。( 左侧菜单也由本速查表整理所得 ) </p>
               <br/>
 	          <p><a href="http://www.cuishifeng.cn/go/chm"target="_blank">CHM版本下载</a> &nbsp;&nbsp;因windows系统权限，打开空白无内容解决办法： 右键单击该 chm格式的电子书，然后单击“属性”， 单击“取消阻止”或者选“解除锁定” </p>
-              <p><a href="http://www.cuishifeng.cn/rs/jquery/source?account=anonymous"target="_blank">源码下载</a><span class="version"> ( v1.11.3.v1 / 2015-06-26  )</span> &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff404b">节省流量，本月起不再开放免费下载源码。 2015-07-20 </span></p>
+              <p><a href="http://www.cuishifeng.cn/rs/jquery/source?account=anonymous"target="_blank">源码下载</a><span class="version"> ( v1.11.3.v2 / 2015-12-29  )</span> &nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#ff404b">节省流量，本月起不再开放下载源码。 2015-07-20 </span></p>
 	          <br/> 
               <p>Ps:源码遵循<a href="http://jquery.cuishifeng.cn/license.html" target="_blank">MIT协议</a>，您可以任意修改，转发，但请至少在首页保留出处(<a href="http://jquery.cuishifeng.cn">http://jquery.cuishifeng.cn</a>)，谢谢！
               </p><br/>
             </div>
-            <h3>支持开源</h3>
+            <h3>为什么需要支持本站</h3>
+            <div class="desc">
+              <p>本站提供的任何内容和服务都是免费的，但本站的运行需要服务器以及人工支持，而这一切都需要费用维持，如果您认为本文档的存在有意义且能真正帮助到您，请支持我们吧，不论是一元、十元、二十元还是百元都是我们发展的动力！</p>
+	      <p>如果您对本站进行了捐助，本站会在本页将您的昵称和捐赠数额列出并提供本站&nbsp;&nbsp;<a href="http://www.cuishifeng.cn/down.html" target="_blank">源码下载</a>&nbsp;&nbsp;权限以示感谢！</p>
+              <p>(默认为您的支付宝用户名，如需更改请发邮件到 <a href="mailto:admin@cuishifeng.cn">admin@cuishifeng.cn</a> )</p>
+            </div>
             <div class="donate">
-                <img src="images/qr_code.png"  alt="" />
+                <img src="images/qr_code.png"  alt="jquery api" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="images/wx_code.jpg"  alt="jquery api" />
                 <div>支付宝账户名： cui***@yeah.net </div>
             </div>
             <h3>捐赠列表   </h3>
             <div class="desc">
               <div style="text-align:center;color:#ff404b;">自2015年7月起，因支付宝系统调整，无法自动获取账号，只能人工录入，请耐心等待</div>
-              <div style="text-align:center;color:#ff404b;">无法提供任何实质性的答谢，只能说一句：非常感谢你们的支持，谢谢！</div>
               <table class="donate-list" border="1" cellspacing="0" cellpadding="0">
                 <thead>
                   <td class="date">日期</td>
@@ -497,31 +508,41 @@
                   <td>留言</td>
                 </thead>
                 <tbody id="donate-list">
-			<tr><td colspan="4"> <img style="margin: 10px auto;"  src="images/loading-bubbles.svg"> </td> </tr>                  
                 </tbody>
               </table>
             </div>
-  
+ 
+	    <div class="pagger">
+                <ul id="page-list">
+                </ul>
+            </div> 
 
             <div id="scrollTop"  >回顶部</div>
         </div><!-- main-wraper end -->
       <footer id="footer-con" class="footer" style="display:none;" >
-           <p id="footer">Copyright &copy; <a href="http://www.cuishifeng.cn" target="_blank">Shifone</a> &nbsp;&nbsp; 2012 - 2015 &nbsp;&nbsp; All rights reserved.</p>
+           <p id="footer">Copyright &copy; <a href="http://www.cuishifeng.cn" target="_blank">Shifone</a> &nbsp;&nbsp; 2012 - 2016 &nbsp;&nbsp; All rights reserved.</p>
       </footer>
 
     </div><!-- main -container end -->
 
 
-<script src="js/jquery-2.1.3.js"></script>
-<script src="js/jquery.autocomplete.js"></script>
-<script src="js/jquery.mCustomScrollbar.js"></script>
-<script src="js/shifone.js"></script>
-<script src="js/donate.js"></script>
+<script src="js/jquery-2.1.4.min.js?v=20151229"></script>
+<script src="js/jquery.autocomplete.min.js?v=20151229"></script>
+<script src="js/jquery.mousewheel.min.js?v=20151229"></script>
+<script src="js/jquery.mCustomScrollbar.min.js?v=20151229"></script>
+<script src="js/shifone.min.js?v=20151229"></script>
+<script src="js/donate.min.js"></script>
+
 <div class="tongji">
-  <script type="text/javascript">
-  var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-  document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fbbcf1c00c855ede39d5ad2eac08d2ab7' type='text/javascript'%3E%3C/script%3E"));
-  </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?bbcf1c00c855ede39d5ad2eac08d2ab7";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </div>
 </body>
 </html>
