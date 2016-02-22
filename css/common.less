@@ -876,3 +876,43 @@ tr {
 .wikitable th, .wikitable td {
   border: 1px solid #2B2F3E;
 }
+
+
+
+#tips-con{
+  display: none;
+  position: relative;
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  background: #ff404b;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+
+  a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+  #tips-close{
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: block;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+
+    &:hover{
+      background: transparent;
+      text-decoration: none;
+    }
+  }
+}
